@@ -22,10 +22,8 @@ const Post = () => {
   return (
     <section className="bg-gray-200 p-3 h-full">
       <h1 className="text-center text-2xl font-medium">Posts Details</h1>
-      {post ? (
-        <>
           <section className="flex justify-between my-5 text-xl font-bold">
-            <h1>{post?.postTitle}</h1>
+            <h1>Title : {post?.postTitle}</h1>
             <h1>{post?.postTimer}</h1>
           </section>
           <h1 className="text-lg mt-2 text-justify">{post.postDescription}</h1>
@@ -43,10 +41,6 @@ const Post = () => {
               Update Post
             </button>
           </section>
-        </>
-      ) : (
-        <p>Post Not Found!</p>
-      )}
     </section>
   );
 };

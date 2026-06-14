@@ -7,7 +7,7 @@ const SearchComponent = () => {
     <>
       <input 
         type="text"
-        className="border w-1/2 p-2 rounded-md"
+        className="border w-115 p-2 rounded-md"
         placeholder="Search The Posts..."
         value={search}
         onChange={(e) => setSearch((e.target.value))}
